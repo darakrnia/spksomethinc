@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <title>SPK Somethinc</title>
+    <!-- Icons font CSS-->
+    <link href="{{ url_for('static', filename='vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <!-- Vendor CSS-->
+    <link href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='vendor/datepicker/daterangepicker.css') }}" rel="stylesheet" media="all">
+    <!-- Main CSS-->
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" media="all">
+  </head>
+  <body>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+      <div class="wrapper wrapper--w790">
+        <div class="card card-5">
+          <div class="card-heading">
+            <h2 class="title">Sistem Penunjang Keputusan Serum Somethinc</h2>
+          </div>
+          <div class="card-body">
+            <form method="POST" action="{{url_for('home')}}">
+              <div class="form-row">
+                <div class="name">Usia</div>
+                <div class="value">
+                  <div class="input-group">
+                    <div class="rs-select2 js-select-simple select--no-search">
+                      <select name="usia" required>
+                        <option selected disabled value="">Pilih usia anda</option>
+                        <option value="0">Dibawah 25 Tahun</option>
+                        <option value="1">Diatas 25 Tahun</option>
+                      </select>
+                      <div class="select-dropdown"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="name">Masalah Kulit 1</div>
+                <div class="value">
+                  <div class="input-group">
+                    <div class="rs-select2 js-select-simple select--no-search">
+                      <select name="mk1" required>
+                        <option selected disabled value="">Pilih masalah kulit anda yang pertama</option>
+                        <option value="1">Kusam</option>
+                        <option value="2">Jerawat</option>
+                        <option value="3">Bekas Jerawat</option>
+                        <option value="4">Bruntusan</option>
+                        <option value="5">Pori-pori</option>
+                        <option value="6">Flek Hitam</option>
+                        <option value="7">Kerutan</option>
+                        <option value="8">Dehidrasi</option>
+                      </select>
+                      <div class="select-dropdown"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="name">Masalah Kulit 2</div>
+                <div class="value">
+                  <div class="input-group">
+                    <div class="rs-select2 js-select-simple select--no-search">
+                      <select name="mk2" required>
+                        <option selected disabled value="">Pilih masalah kulit anda yang kedua</option>
+                        <option value="0">Tidak Ada</option>
+                        <option value="1">Kusam</option>
+                        <option value="2">Jerawat</option>
+                        <option value="3">Bekas Jerawat</option>
+                        <option value="4">Bruntusan</option>
+                        <option value="5">Pori-pori</option>
+                        <option value="6">Flek Hitam</option>
+                        <option value="7">Kerutan</option>
+                        <option value="8">Dehidrasi</option>
+                      </select>
+                      <div class="select-dropdown"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="name">Tipe Kulit</div>
+                <div class="value">
+                  <div class="input-group">
+                    <div class="rs-select2 js-select-simple select--no-search">
+                      <select name="tipe" required>
+                        <option selected disabled value="">Pilih tipe kulit anda</option>
+                        <option value="1">Normal</option>
+                        <option value="2">Kering</option>
+                        <option value="3">Berminyak</option>
+                        <option value="4">Kombinasi</option>
+                      </select>
+                      <div class="select-dropdown"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="name">Kulit Sensitif</div>
+                <div class="value">
+                  <div class="input-group">
+                    <div class="rs-select2 js-select-simple select--no-search">
+                      <select name="sensitif" required>
+                        <option selected disabled value="">Apakah kulit anda sensitif?</option>
+                        <option value="1">Ya</option>
+                        <option value="0">Tidak</option>
+                      </select>
+                      <div class="select-dropdown"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <center>
+                <button class="btn btn--radius-2 btn--red btn-block" type="submit" value="predict">Lihat Hasil</button>
+              </center>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jquery JS-->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <!-- Vendor JS-->
+    <script src="{{ url_for('static', filename='vendor/select2/select2.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/datepicker/moment.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/datepicker/daterangepicker.js') }}"></script>
+    <!-- Main JS-->
+    <script src="{{ url_for('static', filename='js/global.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>SPK Somethinc</title>
+  </head>
+  <body bgcolor=#a3cfb4>
+    <center>
+      <h2 style="margin-top: 50px;">  Serum Yang Cocok Untuk Anda Adalah  </h2>
+
+      {%if data == 1%}
+        <h1>10% Niacinamide + Moisture Sabi Beet Max Brightening</h1>
+        <img src="{{ url_for('static', filename='img/10% niacinamide.jpg') }}" width="250" style="border-radius: 10%;">
+        <h3>Powerful Ingredients For Brightening</h3>
+        <p>10% Niacinamide + Moisture Sabi Beet Max Brightening Serum membantu memaksimalkan warna kulit menjadi cerah,<br> menenangkan kulit, noda gelap atau hiperpigmentasi, mempercepat pemulihan jerawat dan bekasnya,<br> melembabkan, menghaluskan kulit serta memperbaiki barrier dan tekstur kulit jadi lebih merata</p>
+        <table>
+          <tr>
+            <td>Serum ini cocok untuk:</td>
+          </tr>
+          <tr>
+            <td>- Orang yang telah mengerti jenis bahan aktif yang dibutuhkan untuk kulit.</td>
+          </tr>
+          <tr>
+            <td>- Orang yang membutuhkan persen bahan aktif lebih tinggi ke dalam rutinitas perawatan kuit.</td>
+          </tr>
+          <tr>
+            <td>- Orang yang memiliki toleransi tinggi dengan persen bahan aktif.</td>
+          </tr>
+        </table>
+        <br><p>Info lebih lengkap lihat di <a href='https://www.somethinc.com' target="_blank">sini</a></p>
+      
+      {%elif data == 2%}
+        <h1>5% Niacinamide + Moisture Sabi Beet</h1>
+        <img src="{{ url_for('static', filename='img/5% niacinamide.jpg') }}" width="250" style="border-radius: 10%;">
+        <h3>Powerful Ingredients For Brightening</h3>
+        <p>5% Niacinamide + Moisture Sabi Beet Max Brightening Serum membantu memaksimalkan warna kulit menjadi cerah, menenangkan kulit,<br> noda gelap atau hiperpigmentasi, mempercepat pemulihan jerawat dan bekasnya,<br> melembabkan, menghaluskan kulit serta memperbaiki barrier dan tekstur kulit jadi lebih merata</p>
+        <table>
+          <tr>
+            <td>Serum ini cocok untuk:</td>
+          </tr>
+          <tr>
+            <td>- Pemula yang belum berani mencoba dosis tinggi.</td>
+          </tr>
+          <tr>
+            <td>- Orang yang memiliki toleransi rendah dengan persen bahan aktif, terutama Niacinamide.</td>
+          </tr>
+        </table>
+        <br><p>Info lebih lengkap lihat di <a href='https://www.somethinc.com' target="_blank">sini</a></p>
+
+        {%elif data == 3%}
+        <h1>Bakuchiol Skinpair Oil</h1>
+        <img src="{{ url_for('static', filename='img/bakuchiol.jpg') }}" width="250" style="border-radius: 10%;">
+        <h3>Alternative to Retinol for Pregnant Women and Teenagers</h3>
+        <p>Alternatif Retinol dari bahan natural dan vegan yang memiliki sifat Antioxidant, Anti-inflammatory,<br> perawatan jerawat, menstimulasi collagen dan memperbaiki tekstur kulit dengan efek samping <br>yang lebih rendah dibandingkan Retinol.</p>
+        <br><p>Info lebih lengkap lihat di <a href='https://www.somethinc.com' target="_blank">sini</a></p>
+
+      {%elif data == 4%}
+        <h1>Hyaluronic B5</h1>
+        <img src="{{ url_for('static', filename='img/Somethinc_HYALuronicB5_Serum_6.jpg') }}" width="250" style="border-radius: 10%;">
+        <h3>The Key to Your Glowing Skin</h3>
+        <p>Molekul utama yang memegang kunci kelembaban kulit, anti kusam dan anti penuaan dini. Membantu memberikan <br> kelembaban kulit maksimal dan membantu menghaluskan sehingga kulit tampak lebih segar dan lembut.</p>
+        <br><p>Info lebih lengkap lihat di <a href='https://www.somethinc.com' target="_blank">sini</a></p>
+
+      {%elif data == 5%}
+        <h1>Level 1% Retinol</h1>
+        <img src="{{ url_for('static', filename='img/level 1% retinol.jpg') }}" width="250" style="border-radius: 10%;">
+        <h3>Say Goodbye to Wrinkle Skin</h3>
+        <p>Menyamarkan tanda penuaan seperti kerutan, noda hitam, hiperpigmentasi, pori-pori dan garis halus, <br>membuat kulit tampak lebih cerah dan tekstur kulit tampak lebih halus merata. <br>Dengan Retinol 1% yang telah dienkapsulasi sehingga memiliki crystal pelindung yang membuatnya lebih stabil <br>dan aman untuk kulit sensitif.</p>
+        <br><p>Info lebih lengkap lihat di <a href='https://www.somethinc.com' target="_blank">sini</a></p>
+
+      {%elif data == 6%}
+        <h1>Niacinamide + Moisture Beet</h1>
+        <img src="{{ url_for('static', filename='img/SOmethinc_Niacinamide+MoistureBeet_serum_6.jpg') }}" width="250" style="border-radius: 10%;">
+        <h3>Get Rid of Dark Spots and Dull Skin.</h3>
+        <p>Membantu membuat kulit tampak lebih cerah, menyamarkan noda gelap pada kulit, melawan jerawat, <br>dan mengontrol produksi minyak berlebih pada wajah.</p>
+        <br><p>Info lebih lengkap lihat di <a href='https://www.somethinc.com' target="_blank">sini</a></p>
+
+      {%endif%}
+      <a href='/'>Kembali</a>
+    </center>
+  </body>
+</html>
